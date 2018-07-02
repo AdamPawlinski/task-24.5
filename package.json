@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js",
-    "test:watch": "mocha index.test.js -w"    
+    "test": "mocha test.calculateDistance.js",
+    "test:watch": "mocha test.calculateDistance.js -w"
   },
   "author": "Adam Pawliński",
   "license": "ISC",
