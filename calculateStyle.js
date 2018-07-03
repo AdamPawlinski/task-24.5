@@ -1,17 +1,17 @@
 const calculateStylePoints = (styleNotes) => {
-  const note;
-  if (styleNotes.isArray() = true && styleNotes.every(
-    note % 0.5 = 0 && note <= 20 && note >= 0
+  let note;
+  if (isArray(styleNotes) === false || styleNotes.every(
+    note > 20 || note < 0
   )) {
-    styleNotes.filter(
-      (note) => (note !== math.min(styleNotes) && note !== math.max(styleNotes));
-    );
-    styleNotes.forEach(
-      return note =+ note;
-    );
-  } else {
     return
   }
+  const styleFilter = styleNotes.filter(
+      note !== Math.min(styleNotes) && note !== Math.max(styleNotes)
+    );
+  const styleResult =  styleFilter.reduce(
+      (a, b) => (a + b, 0)
+    );
+  return styleResult;
 };
 
 module.exports = calculateStylePoints;

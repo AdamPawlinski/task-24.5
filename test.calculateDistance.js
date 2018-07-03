@@ -2,16 +2,16 @@ const assert = require('assert');
 const calculateDistancePoints = require('./calculateDistance');
 
 describe('calculateDistancePoints', () => {
-  describe('distance on mammoth hill', () => {
-      it('should calculate mammoth hill jump', () => {
-        const actual = calculateDistancePoints(223, 'mammoth', 200);
+  describe('distance on flying hill', () => {
+      it('should calculate flying hill jump', () => {
+        const actual = calculateDistancePoints(223, 'flying', 200);
 
         const expected = '147.6';
 
         assert.equal(actual, expected);
       });
-      it('should calculate mammoth hill jump', () => {
-        const actual = calculateDistancePoints(160.5, 'mammoth', 200);
+      it('should calculate flying hill jump', () => {
+        const actual = calculateDistancePoints(160.5, 'flying', 200);
 
         const expected = '72.6';
 
